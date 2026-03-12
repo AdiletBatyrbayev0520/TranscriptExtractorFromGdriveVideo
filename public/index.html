@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transcript Extractor</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Transcript Extractor</h1>
+            <p>Paste your Google Drive link below to download the transcript.</p>
+        </header>
+
+        <main>
+            <div class="input-card">
+                <input type="text" id="driveUrl" placeholder="https://drive.google.com/file/..." autocomplete="off">
+                <button id="extractBtn">Extract & Download</button>
+            </div>
+
+            <div id="status" class="status-box hidden">
+                <div class="loader-container hidden" id="loader">
+                    <div class="loader"></div>
+                    <p>Extracting transcript, please wait...</p>
+                </div>
+                <p id="message"></p>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Cultural Studies Toolkit</p>
+        </footer>
+    </div>
+
+    <script>
+        const extractBtn = document.getElementById('extractBtn');
+        const driveUrlInput = document.getElementById('driveUrl');
+        const statusBox = document.getElementById('status');
+        const loader = document.getElementById('loader');
+        const message = document.getElementById('message');
+
+        extractBtn.addEventListener('click', async () => {
+            const url = driveUrlInput.value.trim();
+            if (!url) {
+                showStatus('Please enter a valid URL', 'error');
+                return;
+            }
+
+            // UI feedback
+            extractBtn.disabled = true;
+            statusBox.classList.remove('hidden');
+            loader.classList.remove('hidden');
+            message.textContent = '';
+            message.className = '';
+
+            try {
+                const response = await fetch('/extract', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ url })
+                });
+
+                const data = await response.json();
+
+                if (response.ok) {
+                    downloadFile(data.text, data.fileName);
+                    showStatus('Transcript extracted successfully!', 'success');
+                } else {
+                    showStatus(data.error || 'Something went wrong', 'error');
+                }
+            } catch (err) {
+                showStatus('Failed to connect to server', 'error');
+            } finally {
+                extractBtn.disabled = false;
+                loader.classList.add('hidden');
+            }
+        });
+
+        function showStatus(msg, type) {
+            statusBox.classList.remove('hidden');
+            message.textContent = msg;
+            message.className = type;
+        }
+
+        function downloadFile(content, fileName) {
+            const blob = new Blob([content], { type: 'text/plain' });
+            const url = window.URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = fileName;
+            document.body.appendChild(a);
+            a.click();
+            window.URL.revokeObjectURL(url);
+            document.body.removeChild(a);
+        }
+    </script>
+</body>
+</html>
