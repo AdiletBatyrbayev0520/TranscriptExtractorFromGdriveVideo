@@ -1,0 +1,195 @@
+{
+  "cookies": [
+    {
+      "name": "__utma",
+      "value": "61317162.204619561.1776778541.1776778541.1776778541.1",
+      "domain": ".workspace.google.com",
+      "path": "/intl/ru/products/drive/",
+      "expires": 1811338541.364863,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "__utmb",
+      "value": "61317162.0.10.1776778541",
+      "domain": ".workspace.google.com",
+      "path": "/intl/ru/products/drive/",
+      "expires": 1776780341,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "__utmc",
+      "value": "61317162",
+      "domain": ".workspace.google.com",
+      "path": "/intl/ru/products/drive/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "__utmz",
+      "value": "61317162.1776778541.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)",
+      "domain": ".workspace.google.com",
+      "path": "/intl/ru/products/drive/",
+      "expires": 1792546541,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "APPS_MARKETING_SIGNALS",
+      "value": "source%3D%26lastExperiment%3D%26allExperiments%3D",
+      "domain": "workspace.google.com",
+      "path": "/intl/ru/products/drive",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "__Host-GAPS",
+      "value": "1:ktQE6WmcSWy7YPNhYiCZVM0exBD6RQ:41ToErsqtcQfF6QI",
+      "domain": "accounts.google.com",
+      "path": "/",
+      "expires": 1811338539.666969,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "NID",
+      "value": "530=bQ0NjZ1LGgSpfnNsqXY-s5w4PeJvcLO5eb6bCjhPA_FrBXc6xRmvqpkoQuHhbCfxNc3AnAK-hwwvua6sq-NSF16Nezp8g2sjrJeaBgUyccGOFF9Fc0bDLyXxPDLYag9DWDsrwXfbcXJrUKLLg8dFroMQ8mEy_M_hnhvKTZuIKKY2Z5chlafvxSrXNtmKM7tFnWoO3YoLH3-zoe66hQ",
+      "domain": ".google.com",
+      "path": "/",
+      "expires": 1792589739.667044,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "_gcl_au",
+      "value": "1.1.1270779937.1776778541",
+      "domain": ".workspace.google.com",
+      "path": "/",
+      "expires": 1784554541,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "__utma",
+      "value": "61317162.204619561.1776778541.1776778541.1776778541.1",
+      "domain": ".workspace.google.com",
+      "path": "/",
+      "expires": 1811338542.286262,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "__utmc",
+      "value": "61317162",
+      "domain": ".workspace.google.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "__utmz",
+      "value": "61317162.1776778541.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)",
+      "domain": ".workspace.google.com",
+      "path": "/",
+      "expires": 1792546542,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "__utmt_UA-18073-1",
+      "value": "1",
+      "domain": ".workspace.google.com",
+      "path": "/",
+      "expires": 1776779141,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_ga",
+      "value": "GA1.1.523478646.1776778542",
+      "domain": ".workspace.google.com",
+      "path": "/",
+      "expires": 1776782142,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "APPS_MARKETING_SIGNALS",
+      "value": "source=&lastExperiment=&allExperiments=",
+      "domain": ".workspace.google.com",
+      "path": "/",
+      "expires": 1776782142,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "__utmb",
+      "value": "61317162.1.9.1776778542286",
+      "domain": ".workspace.google.com",
+      "path": "/",
+      "expires": 1776780342,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "IDE",
+      "value": "AHWqTUkvDQcfvBQG_wesS2yK3gFtt9VJhmVFXODTXKC8t0Z9ez1xAA7DLMj7ZqoGr-U",
+      "domain": ".doubleclick.net",
+      "path": "/",
+      "expires": 1811338542.499136,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "OTZ",
+      "value": "8574576_36_32__32_",
+      "domain": "accounts.google.com",
+      "path": "/",
+      "expires": 1779370544,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_ga_FWCBRW1RY8",
+      "value": "GS2.1.s1776778541$o1$g1$t1776778589$j12$l0$h0",
+      "domain": ".workspace.google.com",
+      "path": "/",
+      "expires": 1811338589.188717,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    }
+  ],
+  "origins": [
+    {
+      "origin": "https://workspace.google.com",
+      "localStorage": [
+        {
+          "name": "_gcl_ls",
+          "value": "{\"schema\":\"gcl\",\"version\":1,\"gcl_ctr\":{\"value\":{\"value\":0,\"timeouts\":0,\"errors\":0,\"eopCount\":0,\"creationTimeMs\":1776778541289},\"expires\":1784554541289}}"
+        }
+      ]
+    }
+  ]
+}

@@ -2,10 +2,12 @@ const { chromium } = require('playwright');
 
 (async () => {
     // URL from the user request
-    const url = 'https://drive.google.com/file/d/16id6SKfOFZG-rbyNNChIOqNGp0V8uz5J/view';
+    const url = 'https://drive.google.com/file/d/1GIpr42i0jL2QJgFYGRzYKUhai6abnxOc/view';
 
     const browser = await chromium.launch({ headless: false }); // Headless false to see what's happening
-    const context = await browser.newContext();
+    const context = await browser.newContext({
+        storageState: './cookies.json' // Load saved session cookies
+    });
     const page = await context.newPage();
 
     console.log(`Navigating to: ${url}`);
